@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for post in object_list %}
+       <li> <a href="{% url 'myapp:post' post.id %}">{{ post.password }}</a> </li>
+
+{% endfor %}
+
+</body>
+</html>
